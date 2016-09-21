@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Website dedicated to helping people solve, and learn about, orbital mechanics problems.">
+        <meta name="keywords" content="orbital mechanics, celestial mechanics, calculator, equations, formulas, terms">
+        <meta name="author" content="Elaine Coe">
+        
+        <title>Orbital Mechanics Calculator: Home</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- End Favicon -->
+        
+        <!-- Stylesheets/Fonts -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+        integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <!-- Custom/Google Fonts Go Here -->
+        <!-- End Stylesheets/Fonts -->
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <!-- Navbar -->
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
+                            aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Orbital Mechanics Calculator</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="calculator.html">Calculator</a></li>
+                                <li><a href="formulas.html">Formulas</a></li>
+                                <li><a href="terms.html">Terms</a></li>
+                                <li><a href="tidbits.html">Tidbits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar -->
+        
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- End Indicators -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" id="slide1" style="background-image: url(images/slide1.jpg);">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Get to it!</h1>
+                            <p>Trying to solve a word problem? Trying to calculate a launch window? Armed with a few parameters (or COE's!), you can
+                            get started with calculations right away!</p>
+                            <p><a class="btn btn-lg btn-primary" href="calculator.html" role="button">Blast Off!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="slide2" style="background-image: url(images/slide2.jpg);">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Work it out!</h1>
+                            <p>If you're trying to tackle problems on your own, or if you're simply curious about what all those
+                            strange symbols represent, check out the Formulas page.</p>
+                            <p><a class="btn btn-lg btn-primary" href="formulas.html" role="button">Try It!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="slide3" style="background-image: url(images/slide3.jpg);">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Command it!</h1>
+                            <p>Nodal displacement...say what?!?  If the terms used in orbital mechanics have you scratching your head, this is the place for you!</p>
+                            <p><a class="btn btn-lg btn-primary" href="terms.html" role="button">Beam Me Up!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="slide4" style="background-image: url(images/slide4.jpg);">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Harness Your Inner von Braun!</h1>
+                            <p>If you want to master the subject of space (or, if you love bits of knowledge that will help you get ahead on Jeopardy), 
+                            look no further than the Tidbits page.</p>
+                            <p><a class="btn btn-lg btn-primary" href="tidbits.html" role="button">Enlighten Me!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End Carousel -->
+        
+        <!-- Social / Share Icons Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://elainecoe.github.io/orbital-mechanics-calculator/index.html"
+                            target="_blank" title="Share on Facebook!" class="fb"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?source=http://elainecoe.github.io/orbital-mechanics-calculator/index.html&text=Check%20this%20out!%20http://elainecoe.github.io/orbital-mechanics-calculator/index.html&via=mrscoe719" 
+                            target="_blank" Title="Tweet this page!" class="tw">
+                            <i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=http://elainecoe.github.io/orbital-mechanics-calculator/index.html"
+                            target="_blank" title="Share on Google+!" class="gp"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://elainecoe.github.io/orbital-mechanics-calculator/index.html&title=Orbital%20Mechanics%20Calculator&summary=Neat%20site!&url=http://elainecoe.github.io/orbital-mechanics-calculator/index.html"
+                            target="_blank" title="Share on LinkedIn!" class="lin"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="divider-social">
+            
+        </div>
+        <!-- End Social / Share Icons Container -->
+    
+        <!-- Messages Container -->
+        <div class="container messages">
+            <!-- Columns of text below the carousel -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="circle1" style="background-image: url(images/circle1.png);"></div>
+                    <h2>Calculate.</h2>
+                    <p>Some calculations are just plain hard.  Wouldn't it be nice if you could just plug in some known values and receive the unknown ones?
+                    Trying to figure out which buttons to push on a calculator can be a daunting task, to be sure, but don't despair&mdash;we're here to help!</p>
+                    <div class="click"><a class="btn btn-default" href="calculator.html" role="button">Let's Go!</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="circle2" style="background-image: url(images/circle2.gif);"></div>
+                    <h2>Formulate.</h2>
+                    <p>A few brave souls prefer to trek into the unknown on their own.  If that sounds like you, launch into our comprehensive list of
+                    formulas and equations.</p>
+                    <div class="click"><a class="btn btn-default" href="formulas.html" role="button">Show Me!</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="circle3" style="background-image: url(images/circle3.png);"></div>
+                    <h2>Correlate.</h2>
+                    <p>Commander!  Our spacecraft is heading for a line of nodes! (If you're uncertain whether this is okay, you may want to consult
+                    our list of terms).  This is also a great place to arm yourself with words that will impress your friends.</p>
+                    <div class="click"><a class="btn btn-default" href="terms.html" role="button">Check It Out!</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="circle4" style="background-image: url(images/circle4.png);"></div>
+                    <h2>Fascinate.</h2>
+                    <p>Become a quiz whiz by expanding your knowledge of space with a few interesting tidbits of information.</p>
+                    <div class="click"><a class="btn btn-default" href="tidbits.html" role="button">Get to It!</a></div>
+                </div>
+            </div>
+            <!-- End of columns of text below the carousel -->
+            
+            <hr class="divider">
+            
+            <!-- Footer -->
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p style="font-size: 10px; line-height: 1">Slide1 and Slide4 images courtesy of <a href="http://www.nasa.gov">NASA</a></p>
+                <p style="font-size: 10px; line-height: 1">Slide2 and Slide3 images are courtesy and copyright of <a href="http://www.freerangestock.com">Free Range Stock</a></p>
+                <p style="font-size: 10px; line-height: 1">Calculator button icon made by <a href="http://www.flaticon.com/authors/fermam-aziz" title="Fermam Aziz">
+                    Fermam Aziz</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, and             
+                    is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+                <p style="font-size: 10px; line-height: 1">Question mark icon courtesy of <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a></p>
+                <p style="padding: 10px;"></p>
+                <p style="text-align: center;">&copy; 2016 &middot; Elaine Coe &middot; All rights reserved.</p>
+            </footer>
+            <!-- End Footer -->
+        </div>
+        <!-- End Messages Container -->
+        
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="scripts/site.js"></script>
+        <!-- End Scripts -->
+    </body>
+</html>

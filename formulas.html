@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="If you're trying to tackle problems on your own, or if you're simply curious about what all those
+        strange symbols represent, check out the Formulas page.">
+        <meta name="keywords" content="orbital mechanics, celestial mechanics, formulas, equations">
+        <meta name="author" content="Elaine Coe">
+        
+        <title>Orbital Mechanics Calculator: Formulas</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- End Favicon -->
+        
+        <!-- Stylesheets/Fonts -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+        integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/formulas.css">
+        <!-- Custom/Google Fonts Go Here -->
+        <!-- End Stylesheets/Fonts -->
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <!-- Navbar -->
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
+                            aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Orbital Mechanics Calculator</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="calculator.html">Calculator</a></li>
+                                <li class="active"><a href="formulas.html">Formulas</a></li>
+                                <li><a href="terms.html">Terms</a></li>
+                                <li><a href="tidbits.html">Tidbits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar -->
+        
+        <!-- Header/Jumbotron -->
+        <header class="jumbotron" style="background-image: url('images/slide2.jpg');">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-xs-12 col-sm-8">
+                        <p style="padding: 20px;"></p>
+                        <h1>Formulas.</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header/Jumbotron -->
+        
+        <!-- Social / Share Icons Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://elainecoe.github.io/orbital-mechanics-calculator/formulas.html"
+                            target="_blank" title="Share on Facebook!" class="fb"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?source=http://elainecoe.github.io/orbital-mechanics-calculator/formulas.html&text=Check%20this%20out!%20http://elainecoe.github.io/orbital-mechanics-calculator/formulas.html&via=mrscoe719" 
+                            target="_blank" Title="Tweet this page!" class="tw">
+                            <i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=http://elainecoe.github.io/orbital-mechanics-calculator/formulas.html"
+                            target="_blank" title="Share on Google+!" class="gp"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://elainecoe.github.io/orbital-mechanics-calculator/formulas.html&title=Orbital%20Mechanics%20Calculator&summary=Neat%20site!&url=http://elainecoe.github.io/orbital-mechanics-calculator/formulas.html"
+                            target="_blank" title="Share on LinkedIn!" class="lin"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="divider-social">
+            
+        </div>
+        <!-- End Social / Share Icons Container -->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 style="margin-bottom: 20px;">Welcome!</h2>
+                    <p>If you've found your way here, you are obviously one of the brave souls who dare to tackle orbital mechanics the old fashioned way &mdash; with 
+                    grit and determination.  Kudos!</p>
+                    <p>To help you along your journey, there are examples included with many of the formulas (and more forthcoming).</p>
+                    <p>Enjoy! (And, of course, good luck!)</p>
+                </div>
+            </div>
+            
+            <hr class="header-divider" style="margin-top: 50px;">
+
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <!-- Formulas Column -->
+                <div class="col-md-8">
+                    <h1 class="section-header" id="basic-phys">Basic Physics</h1>
+                    
+                    <hr>
+                    
+                    <h3>Linear Momentum</h3>
+                    <hr>
+                    <p class="eq">
+                        \[\bar{p} = m \bar{V}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{p} = linear \ momentum \ vector \ (kg \cdot m/s)$</p>
+                    <p class="def">$m = mass \ (kg)$</p>
+                    <p class="def">$\bar{V} = velocity \ vector \ (m/s)$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#linMoEx" aria-expanded="false"
+                    aria-controls="linMoEx" title="See an example!"></a></p>
+                    <div class="collapse" id="linMoEx">
+                        <div class="well">
+                            <p>How fast would a 5 kg bowling ball have to be rolling to have the same linear momentum as a 25,000 kg truck moving at 1 m/s?</p>
+                            <p>Given: <br>
+                            $m_{ball} = 5 \ kg$ <br><br>
+                            $m_{truck} = 25,000 \ kg$ <br><br>
+                            $V_{truck} = 1 \ m/s$</p>
+                            <p>Find: <br>
+                            $V_{ball} \ to \ equal \ the \ linear \ momentum \ of \ the \ truck$</p>
+                            <p>Solution: <br>
+                            $p_{truck} = m_{truck} V_{truck}$ <br><br>
+                            $p_{truck} = (25,000 \ kg)(1 \ m/s)$ <br><br>
+                            $p_{truck} = 25,000 \ kg \cdot m/s$<br><br>
+                            $V_{ball} = \frac{p_{truck}}{m_{ball}}$ <br><br>
+                            $V_{ball} = \frac{25,000 \ kg \cdot m/s}{5 \ kg}$<br><br>
+                            $V_{ball} = 5,000 \ m/s$</p>
+                            <p>Answer: <br>
+                            $V_{ball} = 5,000 \ m/s$</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Angular Momentum</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{H} = I \bar{\Omega}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{H} = angular \ momentum \ vector \ (kg \cdot m^{2}/s)$</p>
+                    <p class="def">$I = moment \ of \ inertia \ (kg \cdot m^{2})$</p>
+                    <p class="def">$\Omega = angular \ velocity \ vector \ (rad/s)$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#angMoEx1" aria-expanded="false"
+                    aria-controls="angMoEx1" title="See an example!"></a></p>
+                    <div class="collapse" id="angMoEx1">
+                        <div class="well">
+                            <p>A football thrown in a perfect spiral has a moment of inertia of 0.001 kg &middot; m<sup>2</sup>.  If the football is spinning at
+                            60 rpm, what is its angular momentum?</p>
+                            <p>Given: <br>
+                            $I = 0.001 \ kg \cdot m^{2}$ <br><br>
+                            $\bar{ \Omega} = 60 \ rpm \Rightarrow (60) \left( \frac{2 \pi}{60} \ rad/s \right) = 6.283 \ rad/s$</p>
+                            <p>Find: <br>
+                            $H$</p>
+                            <p>Solution: <br>
+                            $\bar{H} = I \bar{ \Omega}$ <br><br>
+                            $H = (0.001 \ kg \cdot m^{2})(6.283 \ rad/s)$ <br><br>
+                            $H = 0.006283 \ kg \cdot m^{2}/s$</p>
+                            <p>Answer: <br>
+                            $H = 0.006283 \ kg \cdot m^{2}/s$</p>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <hr>
+                    
+                    <h4>Angular Momentum another way:</h4>
+                    
+                    <p class="eq">
+                        \[\bar{H} = \bar{R} \times m \bar{V}\]
+                    </p>
+                    <p style="text-align: center"><strong>** Note: this is a cross product **</strong></p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{H} = angular \ momentum \ vector \ (kg \cdot m^{2}/s)$</p>
+                    <p class="def">$\bar{R} = position \ (or, \ moment \ arm) \ (m)$</p>
+                    <p class="def">$m = mass \ (kg)$</p>
+                    <p class="def">$\bar{V} = velocity \ vector \ (m/s)$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#angMoEx" aria-expanded="false" 
+                    aria-controls="angMoEx" title="See an example!"></a></p>
+                    <div class="collapse" id="angMoEx">
+                        <div class="well">
+                            <p>Imagine you are spinning a 0.30 kg mass (attached to the end of a 0.5 m string) over your head.  If you let go of the string the mass will
+                            sail off on a tangent of 2 m/s.  What was the angular momentum of the spinning mass before you let go?</p>
+                            <p>Given: <br>
+                            $\ m = 0.30 \ kg$ <br><br>
+                            $R = 0.5 \ m$ <br><br>
+                            $V = 2 \ m/s$</p>
+                            <p>Find: <br>
+                            $H$</p>
+                            <p>Solution: <br>
+                            $ \bar{H} = \bar{R} \times \bar{m} \bar{V}$ <br><br>
+                            $H = RmV$ <br><br>
+                            $H = (0.5 \ m)(0.30 \ kg)(2 m/s)$ <br><br>
+                            $H = 0.30 \ kg \cdot m/s$</p>
+                            <p>Answer: <br>
+                            $H = 0.30 \ kg \cdot m/s$</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Force (Applied)</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{F} = m \bar{a}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{F} = force \ vector \ (kg \cdot m/s^{2}, \ or, \ N \ (Newtons))$</p>
+                    <p class="def">$m = mass \ (kg)$</p>
+                    <p class="def">$\bar{a} = acceleration \ (m/s^{2})$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#forceEx" aria-expanded="false" 
+                    aria-controls="forceEx" title="See an example!"></a></p>
+                    <div class="collapse" id="forceEx">
+                        <div class="well">
+                            <p>A hockey player is able to apply a 100 N force to 0.170097 kg hockey puck for a total of 0.1 seconds.  Ignoring gravity,
+                            how fast will the hockey puck be going?</p>
+                            <p>Given: <br>
+                            $m_{puck} = 0.170097 \ kg$ <br><br>
+                            $F_{player} = 100 \ N$ <br><br>
+                            $\Delta t = 0.1 \ s$</p>
+                            <p>Find: <br>
+                            $\Delta V_{puck}$</p>
+                            <p>Solution: <br>
+                            $F = ma \Rightarrow F = m \frac{\Delta V}{\Delta t}$ <br><br>
+                            $\Delta V = \frac{F \Delta t}{m}$<br><br>
+                            $\Delta V = \frac{(100 \ N)(0.1 \ s)}{0.170097 \ kg}$ <br><br>
+                            $\Delta V = 58.79 \ m/s$</p>
+                            <p>Answer: <br>
+                            $\Delta V = 58.79 \ m/s$</p>
+                            <p>Or, 131.5 mph &mdash; What a shot!! (A hard slapshot typically clocks in at about 100 mph)</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Force (Due to Gravity)</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[F_{g} = \frac{Gm_{1}m_{2}}{R^{2}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$F_{g} = force \ due \ to \ gravity \ (N)$</p>
+                    <p class="def">$G = universal \ gravitational \ constant \approx 6.67 \times 10^{-11} (N \cdot m^{2}/kg^{2})$</p>
+                    <p class="def">$m_{1}, \ m_{2} = masses \ of \ two \ bodies \ (m)$</p>
+                    <p class="def">$R = distance \ between \ the \ two \ bodies \ (m)$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#forceGEx" aria-expanded="false" 
+                    aria-controls="forceGEx" title="See an example!"></a></p>
+                    <div class="collapse" id="forceGEx">
+                        <div class="well">
+                            <p>In the void of interstellar space, two asteroids pass each other at a distance of 200 m.  Asteroid 1 has a mass of 2 X 10<sup>6</sup> kg, while
+                            Asteroid 2 has a mass of 8 X 10<sup>6</sup> kg.  What is the force of gravitational attraction between them?</p>
+                            <p>Given: <br>
+                            $m_{Asteroid 1} = 2 \times 10^{6} \ kg$ <br><br>
+                            $m_{Asteroid 2} = 8 \times 10^{6} \ kg$ <br><br>
+                            $R = 200 \ m$</p>
+                            <p>Find: <br>
+                            $F_{g}$</p>
+                            <p>Solution: <br>
+                            $F_{g} = \frac{Gm_{Asteroid 1}m_{Asteroid 2}}{R^{2}}$ <br><br>
+                            $F_{g} = \frac{(6.67 \times 10^{-11} \ N \cdot m^{2}/kg^{2})(2 \times 10^{6} \ kg)(8 \times 10^{6} \ kg)}{(200 \ m)^{2}}$ <br><br>
+                            $F_{g} = 0.02668 \ N$</p>
+                            <p>Answer: <br>
+                            $F_{g} = 0.02668 \ N$</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Acceleration (Due to Gravity)</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[a_{g} = \frac{\mu_{earth}}{R^{2}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$a_{g} = acceleration \ due \ to \ gravity \ (m/s^{2})$</p>
+                    <p class="def">$\mu_{earth} = Gm_{earth} \approx 3.986 \times 10^{14} \ (m^{3}/s^{2}) \ or \ 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R = distance \ to \ Earth's \ center \ (m \ or \ km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Total Mechanical Energy</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[E = KE + PE\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$E = total \ mechanical \ energy \ (kg \cdot m^{2}/s^{2})$</p>
+                    <p class="def">$KE = kinetic \ energy \ (kg \cdot m^{2}/s^{2})$</p>
+                    <p class="def">$PE = potential \ energy \ (kg \cdot m^{2}/s^{2})$</p>
+                    
+                    <br>
+                    <hr>
+                    
+                    <h4>Total Mechanical Energy another way:</h4>
+                    
+                    <p class="eq">
+                        \[E = \frac{1}{2}mV^{2} - \frac{m \mu}{R}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$E = total \ mechanical \ energy \ (kg \cdot km^{2}/s^{2})$</p>
+                    <p class="def">$m = mass \ (kg)$</p>
+                    <p class="def">$V = velocity \ (km/s)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R = position \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Kinetic Energy</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[KE = \frac{1}{2}mV^{2}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$KE = kinetic \ energy \ (kg \cdot km^{2}/s^{2})$</p>
+                    <p class="def">$m = mass \ (kg)$</p>
+                    <p class="def">$V = velocity \ (km/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Potential Energy</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[PE = - \frac{m \mu}{R}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$PE = potential \ energy \ (kg \cdot km^{2}/s^{2})$</p>
+                    <p class="def">$m = mass \ (kg)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R = distance \ from \ Earth's \ center \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="two-body">Two-Body Motion</h1>
+                    
+                    <hr>
+                    
+                    <h3>Restricted Two-Body Equation of Motion</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\ddot{\bar{R}} + \frac{\mu}{R^{2}} \frac{\bar{R}}{R} = 0\]
+                    </p>
+                    <p style="text-align: center"><strong>** Note: $\ddot{\bar{R}}$ is the engineering convention for the second derivative of $\bar{R}$ with respect to time, better known as acceleration, or, $\bar{a}$ **</strong></p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\ddot{\bar{R}} = spacecraft's \ acceleration \ (km/s^{2})$</p>
+                    <p class="def">$\mu = gravitational \ parameter = 3.986 \times 10^{5} (km^{3}/s^{2}) \ for \ Earth$</p>
+                    <p class="def">$\bar{R} = spacecraft's \ position \ vector \ (km)$</p>
+                    <p class="def">$R = magnitude \ of \ spacecraft's \ position \ vector \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="orb-geo">Orbital Geometry</h1>
+                    
+                    <hr>
+                    
+                    <h3>Geometrical Parameters</h3>
+                    
+                    <hr>
+                    
+                    <div style="background-color: whitesmoke;">
+                        <p>$\bar{R} = spacecraft's \ position \ vector, \ measured \ from \ Earth's \ center$</p>
+                        <p>$\bar{V} = spacecraft's \ velocity \ vector$</p>
+                        <p>$F \ and \ F^{1} = primary \ and \ vacant \ foci \ of \ the \ ellipse$</p>
+                        <p>$R_{p} = radius \ of \ periapsis$</p>
+                        <p>$R_{a} = radius \ of \ apoapsis$</p>
+                        <p>$2a = major \ axis$</p>
+                        <p>$2b = minor \ axis$</p>
+                        <p>$2c = distance \ between \ the \ foci$</p>
+                        <p>$a = semimajor \ axis$</p>
+                        <p>$b = semiminor \ axis$</p>
+                        <p>$\nu = true \ anomaly$</p>
+                        <p>$\phi = flight \ path \ angle$</p>
+                        <p>$e = eccentricity$</p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Magnitude of Position Vector</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[R = \frac{a(1 - e^{2})}{1 + e \cos \nu}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$R = magnitude \ of \ the \ spacecraft's \ position \ vector \ (km)$</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    <p class="def">$e = eccentricity \ (unitless)$</p>
+                    <p class="def">$\nu = true \ anomaly \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="orb-mo">Orbital Motion</h1>
+                    
+                    <hr>
+                    
+                    <h3>Specific Mechanical Energy</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\varepsilon = \frac{V^{2}}{2} - \frac{\mu}{R}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\varepsilon = spacecraft's \ specific \ mechanical \ energy \ (km^{2}/s^{2})$</p>
+                    <p class="def">$V = spacecraft's \ velocity \ (km/s)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{2}) \ on \ Earth$</p>
+                    <p class="def">$R = spacecraft's \ distance \ from \ Earth's \ center \ (km)$</p>
+                    
+                    <br>
+                    <hr>
+                    
+                    <h4>Specific Mechanical Energy another way:</h4>
+                    
+                    <p class="eq">
+                        \[\varepsilon = - \frac{\mu}{2a}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">$\varepsilon = spacecraft's \ specific \ mechanical \ energy \ (km^{2}/s^{2})$</p>
+                    <p class="def">$\mu = gravitational \ parameter = 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#smeEx" aria-expanded="false" 
+                    aria-controls="smeEx" title="See an example!"></a></p>
+                    <div class="collapse" id="smeEx">
+                        <div class="well">
+                            <p>What is the specific mechanical energy of an orbit with a semimajor axis of 46,320 km?</p>
+                            <p>Given: <br>
+                            $a = 46,320 \ km$</p>
+                            <p>Find: <br>
+                            $ \varepsilon$</p>
+                            <p>Solution: <br>
+                            $ \varepsilon = - \frac{ \mu}{2a}$ <br><br>
+                            $ \varepsilon = - \frac{3.986 \times 10^{5} \ km^{3}/s^{2}}{2(46,320 \ km)}$ <br><br>
+                            $ \varepsilon = - 4.30 \ km^{2}/s^{2}$</p>
+                            <p>Answer: <br>
+                            $ \varepsilon = - 4.30 \ km^{2}/s^{2}$</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Orbital Period</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[P = 2 \pi \sqrt{\frac{a^{3}}{\mu}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$P = orbital \ period \ (s)$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    <p class="def">$\mu = gravitational \ parameter = 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Specific Angular Momentum</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{h} = \bar{R} \times \bar{V}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{h} = spacecraft's \ specific \ angular \ momentum \ vector \ (km^{2}/s)$</p>
+                    <p class="def">$\bar{R} = spacecraft's \ position \ vector \ (km)$</p>
+                    <p class="def">$\bar{V} = spacecraft's \ velocity \ vector \ (km/s)$</p>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#spAngMoEx" aria-expanded="false" 
+                    aria-controls="spAngMoEx" title="See an example!"></a></p>
+                    <div class="collapse" id="spAngMoEx">
+                        <div class="well">
+                            <p>A spacecraft sends the following information to a ground-based tracking station: <br>
+                            $ \bar{R} = 7220 \ \hat{I} + 5477 \ \hat{J} + 223 \ \hat{K} \ km$ <br>
+                            $ \bar{V} = 0.34 \ \hat{I} - 0.75 \ \hat{J} - 8.00 \ \hat{K} \ km/s$ <br>
+                            What is the specific angular momentum of the spacecraft?</p>
+                            <p>Given: <br>
+                            $ \bar{R} = 7220 \ \hat{I} + 5477 \ \hat{J} + 223 \ \hat{K} \ km$ <br><br>
+                            $ \bar{V} = 0.34 \ \hat{I} - 0.75 \ \hat{J} - 8.00 \ \hat{K} \ km/s$</p>
+                            <p>Find: <br>
+                            $ \bar{h}$</p>
+                            <p>Solution: <br>
+                            $ \bar{h} = \bar{R} \times \bar{V}$ <br><br>
+                            $ \bar{h} = [(5477)(-8.00) - (-0.75)(223)] \ \hat{I} - [(7220)(-8.00) - (0.34)(223)] \ \hat{J} +$<br><br>
+                            $[(7220)(-0.75) - (0.34)(5477)] \ \hat{K} \ km^{2}/s$<br><br>
+                            $ \bar{h} = [(-43816) - (-167.25)] \ \hat{I} - [(-57760) - (75.82)] \ \hat{J} +$<br><br>
+                            $[(-5415) - (1882.18)] \ \hat{K} \ km^{2}/s$<br><br>
+                            $ \bar{h} = - 43,648.75 \ \hat{I} + 57,835.82 \ \hat{J} - 7,277.18 \ \hat{K} \ km^{2}/s$</p>
+                            <p>Answer: <br>
+                            $ \bar{h} = - 43,648.75 \ \hat{I} + 57,835.82 \ \hat{J} - 7,277.18 \ \hat{K} \ km^{2}/s$</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="orb-elem">Orbital Elements</h1>
+                    <p class="ex"><a class="glyphicon glyphicon-option-horizontal" role="button" data-toggle="collapse" data-target="#orbElEx" aria-expanded="false" 
+                    aria-controls="orbElEx" title="See an example!"></a></p>
+                    <div class="collapse" id="orbElEx">
+                        <div class="well">
+                            <p>This example illustrates the use of most (if not all) formulas listed in this section.  It's very beneficial
+                            to see how they all fit together.</p>
+                            <p>A new Earth observation satellite is known to have the following position and velocity vectors: <br>
+                            $\bar{R} = 8228 \hat{I} + 389.0 \hat{J} + 6888 \hat{K} \ km$ <br>
+                            $\bar{V} = -0.7000 \hat{I} + 6.600 \hat{J} -0.6000 \hat{K} \ km/s$ <br><br>
+                            What are this satellite's COE's (<i>a</i>, <i>e</i>, <i>i</i>, <i>&Omega;</i>, <i>&omega;</i>, and <i>&nu;</i>)?</p>
+                            <p>Given: <br>
+                            $\bar{R} = 8228 \hat{I} + 389.0 \hat{J} + 6888 \hat{K} \ km$ <br><br>
+                            $\bar{V} = -0.7000 \hat{I} + 6.600 \hat{J} -0.6000 \hat{K} \ km/s$</p>
+                            <p>Find: <br>
+                            $a \ (semimajor \ axis)$ <br><br>
+                            $e \ (eccentricity)$ <br><br>
+                            $i \ (inclination)$ <br><br>
+                            $\Omega \ (right \ ascension \ of \ the \ ascending \ node)$ <br><br>
+                            $\omega \ (argument \ of \ perigee)$ <br><br>
+                            $\nu \ (true \ anomaly)$</p>
+                            <p>Solution:</p>
+                            <p>Step 1: Determine magnitudes of $\bar{R}$ and $\bar{V}$</p>
+                            <p>$R = \sqrt{(8228)^{2} + (389.0)^{2} + (6888)^{2}} = 10,738 \ km$ <br><br>
+                            $V = \sqrt{(0.7000)^{2} + (6.600)^{2} + (0.6000)^{2}} = 6.664 \ km/s$</p>
+                            <p>Step 2: Solve for the semimajor axis, $a$</p>
+                            <p>$\varepsilon = \frac{V^{2}}{2} - \frac{\mu}{R}$ <br><br>
+                            $\varepsilon = \frac{(6.664 \ km/s)^{2}}{2} - \frac{3.986 \times 10^{5} \ km^{3}/s^{2}}{10,738 \ km} = -14.916 \ km^{2}/s^{2}$ <br><br>
+                            $\varepsilon = - \frac{\mu}{2a} \Rightarrow a = - \frac{\mu}{2 \varepsilon}$ <br><br>
+                            $a = \frac{3.986 \times 10^{5} \ km^{3}/s^{2}}{2(-14.916 \ km^{2}/s^{2}} = 13360 \ km \rightarrow 1.336 \times 10^{4} \ km$</p>
+                            <p>First Answer: <br>
+                            $a = 1.336 \times 10^{4} \ km$</p><br>
+                            <p>Step 3: Solve for eccentricity vector, $\bar{e}$, and its magnitude, $e$</p>
+                            <p>$\bar{e} = \frac{1}{\mu} \left[ \left(V^{2} - \frac{\mu}{R} \right) \bar{R} - \left( \bar{R} \cdot \bar{V} \right) \bar{V} \right]$ <br><br>
+                            $\bar{R} \cdot \bar{V} = (8228)(-0.7000) + (389.0)(6.600) + (6888)(-0.600) = -7325 \ km^{2}/s$ <br><br>
+                            $\bar{e} = \frac{1}{3.986 \times 10^{5} \ km^{3}/s^{2}} \left[ \left( \left( 6.664 \ m/s \right)^{2} - \frac{3.986 \times 10^{5} \ km^{3}/s^{2}}{10,738 \ km} \right) \bar{R} - \left(-7325 \ km^{2}/s \right) \bar{V} \right]$ <br><br>
+                            $\bar{e} = (2.5088 \times 10^{-6})[(7.288) \bar{R} - (-7325) \bar{V}]$ <br><br>
+                            $\bar{e} = (1.8248 \times 10^{-5})[8228 \hat{I} + 389.0 \hat{J} + 6888 \hat{K}] - (-0.018377)[-0.7000 \hat{I} + 6.600 \hat{J} - 0.6000 \hat{K}]$ <br><br>
+                            $\bar{e} = [0.15044 \hat{I} + 0.0071125 \hat{J} + 0.12594 \hat{K}] - [0.012864 \hat{I} - 0.12129 \hat{J} + 0.011026 \hat{K}]$ <br><br>
+                            $\bar{e} = 0.1376 \hat{I} + 0.1284 \hat{J} + 0.1149 \hat{K}$<br><br>
+                            $e = \sqrt{(0.1376)^{2} + (0.1284)^{2} + (0.1149)^{2}} = 0.2205$</p>
+                            <p>Second Answer: <br>
+                            $e = 0.2205$</p><br>
+                            <p>Step 4: Solve for specific angular momentum vector, $\bar{h}$, and its magnitude, h</p>
+                            <p>$\bar{h} = \bar{R} \times \bar{V}$ <br><br>
+                            $\bar{h} = [(389.0)(-0.600) - (6.600)(6888)] \hat{I} - [(8228)(-0.6000) - (-0.7000)(6888)] \hat{J} + [(8228)(6.600) - (0.700)(389.0)] \hat{K} \ km^{2}/s$ <br><br>
+                            $\bar{h} = [(-233.4)-(45,460.8)] \hat{I} - [(-4936.8) + (4821.6)] \hat{J} + [(54,304.8) + (272.3)] \hat{K} \ km^{2}/s$ <br><br>
+                            $\bar{h} = -45,694.2 \hat{I} + 115.2 \hat{J} + 54,577.1 \hat{K} \ km^{2}/s$ <br><br>
+                            $h = \sqrt{(45,694.2)^{2} + (115.2)^{2} + (54,577.1)^{2}} = 71,180.3 \ km^{2}/s$</p>
+                            <p>Step 5: Solve for the inclination angle, $i$</p>
+                            <p>$i = \cos^{-1} \left(\frac{\hat{K} \cdot \bar{h}}{Kh}\right) \Rightarrow \cos^{-1} \left( \frac{\hat{K} \cdot \bar{h}}{h}\right)$ <br><br>
+                            $\hat{K} \cdot \bar{h} = h_{K} = 54,577.1$ <br><br>
+                            $i = \cos^{-1} \left( \frac{54,577.1}{71,180.3} \right) = \cos^{-1}(0.76674)$ <br><br>
+                            $i = 39.94^{\circ} \ or \ (360^{\circ} - 39.94^{\circ}) = 320.1^{\circ}$</p>
+                            <p>Resolving this ambiguity requires following the definition of inclination.  Because $0^{\circ} &lt; i &lt; 360^{\circ}$: <br>
+                            $i = 39.94^{\circ}$</p>
+                            <p>Third Answer: <br>
+                            $i = 39.94^{\circ}$</p><br>
+                            <p>Step 6: Solve for the ascending node vector, $\bar{n}$, and its magnitude, $n$</p>
+                            <p>$\bar{n} = \hat{K} \times \bar{h}$ <br><br>
+                            $\bar{n} = -115.2 \hat{I} -45,694.2 \hat{J} + 0 \hat{K}$ <br><br>
+                            $n = \sqrt{(115.2)^{2} + (45,694.2)^{2} + (0)^{2}} = 45,694.3 \ km^{2}/s$</p>
+                            <p>Step 7: Solve for right ascension of the ascending node, $\Omega$.  Do a quadrant check.</p>
+                            <p>$\Omega = \cos^{-1} \left( \frac{\hat{I} \cdot \bar{n}}{In} \right) \Rightarrow \cos^{-1} \left( \frac{\hat{I} \cdot \bar{n}}{n} \right)$ <br><br>
+                            $\hat{I} \cdot \bar{n} = n_{I} = -115.2$ <br><br>
+                            $\Omega = \cos^{-1} \left( \frac{-115.2}{45,694.3} \right) = \cos^{-1}(-0.0025211)$<br><br>
+                            $\Omega = 90.14^{\circ} \ or \ (360^{\circ} - 90.14^{\circ}) = 269.9^{\circ}$ <br><br>
+                            $If \ n_{J} \geq 0, \ then \ 0^{\circ} \leq \Omega \leq 180^{\circ}$ <br><br>
+                            $If \ n_{J} &lt; 0, \ then \ 180^{\circ} &lt; \Omega &lt; 360^{\circ}$ <br><br>
+                            $n_{J} = -45,694.2, \ n_{J} &lt; 0$ <br><br>
+                            $\Omega = 269.9^{\circ}$</p>
+                            <p>Fourth Answer: <br>
+                            $\Omega = 269.9^{\circ}$</p><br>
+                            <p>Step 8: Solve for the argument of perigee, $\omega$.  Do a quadrant check.</p>
+                            <p>$\omega = \cos^{-1} \left( \frac{\bar{n} \cdot \bar{e}}{ne} \right)$ <br><br>
+                            $\bar{n} \cdot \bar{e} = (-115.2)(0.1376) + (-45,694.2)(0.1284) + (0)(0.1149) = -5882.99$ <br><br>
+                            $\omega = \cos^{-1} \left[ \frac{-5882.99}{(45694.3)(0.2205)} \right] = \cos^{-1}(-0.58389)$ <br><br>
+                            $\omega = 125.7^{\circ} \ or \ (360^{\circ} - 125.7^{\circ}) = 234.3^{\circ}$ <br><br>
+                            $If \ e_{K} \geq 0, \ then \ 0^{\circ} \leq \omega \leq 180^{\circ}$ <br><br>
+                            $If \ e_{K} &lt; 0, \ then \ 180^{\circ} &lt; \omega &lt; 360^{\circ}$ <br><br>
+                            $e_{K} = 0.1149, \ e_{K} &gt; 0$ <br><br>
+                            $\omega = 125.7^{\circ}$</p>
+                            <p>Fifth Answer: <br>
+                            $\omega = 125.7^{\circ}$</p><br>
+                            <p>Step 9: Solve for true anomaly, $\nu$.  Do a quadrant check.</p>
+                            <p>$\nu = \cos^{-1} \left( \frac{\bar{e} \cdot \bar{R}}{eR} \right)$ <br><br>
+                            $\bar{e} \cdot \bar{R} = (0.1376)(8228) + (0.1284)(389.0) + (0.1149)(6888) = 1974.05$ <br><br>
+                            $\nu = \cos^{-1} \left[ \frac{1974.05}{(0.2205)(10,738)} \right] = \cos^{-1}(0.83373)$ <br><br>
+                            $\nu = 33.52^{\circ} \ or \ (360^{\circ} - 33.52^{\circ}) = 326.48^{\circ}$ <br><br>
+                            $If \ (\bar{R} \cdot \bar{V}) \geq 0, \ then \ 0^{\circ} \leq \nu \ leq 180^{\circ}$ <br><br>
+                            $If \ (\bar{R} \cdot \bar{V} &lt; 0, \ then \ 180^{\circ} &lt; \nu &lt; 360^{\circ}$ <br><br>
+                            $(\bar{R} \cdot \bar{V}) = -7325, \ (\bar{R} \cdot \bar{V}) &lt; 0$ <br><br>
+                            $\nu = 326.5^{\circ}$</p>
+                            <p>Sixth Answer: <br>
+                            $\nu = 326.5^{\circ}$</p><br>
+                            <p>Whew!!!</p>
+                            <p><strong>Please note:</strong> This example is based on an example found in this (<i>fantabulous!!</i>&mdash;that's a word, <i>right</i>??) book: <br>
+                            Sellers, Jerry Jon, et al.  <i>Understanding Space: An Introduction to Astronautics.  </i>New York: McGraw-Hill, 1994.</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Semimajor Axis</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[a = - \frac{\mu}{2 \varepsilon}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    <p class="def">$\mu = gravitational \ parameter = 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$\varepsilon = spacecraft's \ specific \ mechanical \ energy \ (km^{2}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Eccentricity</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{e} =  \frac{1}{ \mu }  \Big[\Big(V^{2} - \frac{\mu}{R}\Big)\bar{R} - \Big(\bar{R} \cdot \bar{V}\Big)\bar{V}\Big]\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{e} = eccentricity \ vector \ (unitless)$</p>
+                    <p class="def">$\mu = gravitational \ parameter = 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$V = magnitude \ of \ \bar{V} \ (km/s)$</p>
+                    <p class="def">$R = magnitude \ of \ \bar{R} \ (km)$</p>
+                    <p class="def">$\bar{R} = position \ vector \ (km)$</p>
+                    <p class="def">$\bar{V} = velocity \ vector \ (km/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Inclination</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[i = \cos^{-1} \Big(\frac{\hat{K} \cdot \bar{h}}{Kh}\Big)\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$i = inclination \ (deg \ or \ rad)$</p>
+                    <p class="def">$\hat{K} = unit \ vector \ through \ the \ North \ Pole$</p>
+                    <p class="def">$\bar{h} = specific \ angular \ momentum \ vector \ (km^{2}/s)$</p>
+                    <p class="def">$K = magnitude \ of \ \hat{K} = 1$</p>
+                    <p class="def">$h = magnitude \ of \ \bar{h} \ (km^{2}/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Ascending Node Vector</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{n} = \hat{K} \times \bar{h}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{n} = ascending \ node \ vector \ (km^{2}/s)$</p>
+                    <p class="def">$\hat{K} = unit \ vector \ through \ the \ North \ Pole$</p>
+                    <p class="def">$\bar{h} = specific \ angular \ momentum \ vector \ (km^{2}/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Right Ascension of the Ascending Node</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\Omega = \cos^{-1} \Big(\frac{\hat{I} \cdot \bar{n}}{In}\Big)\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\Omega = right \ ascension \ of \ the \ ascending \ node \ (deg \ or \ rad)$</p>
+                    <p class="def">$\hat{I} = unit \ vector \ in \ the \ principal \ direction$</p>
+                    <p class="def">$\bar{n} = ascending \ node \ vector \ (km^{2}/s)$</p>
+                    <p class="def">$I = magnitude \ of \ \hat{I} = 1$</p>
+                    <p class="def">$n = magnitude \ of \ \bar{n} \ (km^{2}/s)$</p>
+                    
+                    <br>
+                    
+                    <p class="def">$If \ n_{j} \geq 0, \ then \ 0 \leq \Omega \leq 180^{\circ}$</p>
+                    <p class="def">$If \ n_{j} &lt; 0, \then \ 180^{\circ} &lt; \Omega &lt; 360^{\circ}$</p>
+                    
+                    <hr>
+                    
+                    <h3>Argument of Perigee</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\omega = \cos^{-1} \Big(\frac{\bar{n} \cdot \bar{e}}{ne} \Big)\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\omega = argument \ of \ perigee \ (deg \ or \ rad)$</p>
+                    <p class="def">$\bar{n} = ascending \ node \ vector \ (km^{2}/s)$</p>
+                    <p class="def">$\bar{e} = eccentricity \ vector \ (unitless)$</p>
+                    <p class="def">$n = magnitude \ of \ \bar{n} \ (km^{2}/s)$</p>
+                    <p class="def">$e = magnitude \ of \ \bar{e} \ (unitless)$</p>
+                    
+                    <br>
+                    
+                    <p class="def">$If \ e_{k} \geq 0, \ then \ 0^{\circ} \leq \omega \leq 180^{\circ}$</p>
+                    <p class="def">$If \ e_{k} &lt; 0, \ then \ 180^{\circ} &lt; \omega &lt; 360^{\circ}$</p>
+                    
+                    <hr>
+                    
+                    <h3>True Anomaly</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\nu = \cos^{-1} \Big(\frac{\bar{e} \cdot \bar{R}}{eR} \Big)\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\nu = true \ anomaly \ (deg \ or \ rad)$</p>
+                    <p class="def">$\bar{e} = eccentricity \ vector \ (unitless)$</p>
+                    <p class="def">$\bar{R} = position \ vector \ (km)$</p>
+                    <p class="def">$e = magnitude \ of \ \bar{e} \ (unitless)$</p>
+                    <p class="def">$R = magnitude \ of \ \bar{R} \ (km)$</p>
+                    
+                    <br>
+                    
+                    <p class="def">$If \ \left(\bar{R} \cdot \bar{V} \right) \geq 0 \ \left(\phi \geq 0 \right), \ then \ 0^{\circ} \leq \nu \leq 180^{\circ}$</p>
+                    <p class="def">$If \ \left(\bar{R} \cdot \bar{V} \right) &lt; 0 \ \left(\phi &lt; 0 \right), \ then \ 180^{\circ} &lt; \nu &lt; 360^{\circ}$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="ground">Ground Tracks</h1>
+                    
+                    <hr>
+                    
+                    <h3>Nodal Displacement</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\Delta N = 360^{\circ} - longitude \ between \ successive \ ascending \ nodes\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\Delta N = nodal \ displacement \ (deg)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Period (hours)</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[P = \frac{\Delta N}{15^{\circ} /hr} \ (for \ direct \ orbits)\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$P = period \ (hours)$</p>
+                    <p class="def">$\Delta N = nodal \ displacement \ (deg)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Semimajor Axis</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[a = \sqrt[3]{\mu (P/2\pi)^{2}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$P = period \ (seconds)$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Inclination (Direct Orbit)</h3>
+                    
+                    <hr>
+                    
+                    <div style="background-color: whitesmoke; text-align: center;">
+                        <p>For a direct (prograde) orbit, $(0 &lt; i &lt; 90^{\circ})$, the latitude of the northernmost 
+                        or southernmost point on the ground track (referred to as the "maximum latitude") is equal to the orbit's inclination.</p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Inclination (Indirect Orbit)</h3>
+                    
+                    <hr>
+                    
+                    <div style="background-color: whitesmoke; text-align: center;">
+                        <p>For an indirect (retrograde) orbit, $(90^{\circ} &lt; i &lt; 180^{\circ})$, subtract the maximum latitude from 
+                        $180^{\circ}$ to get the inclination.</p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="ht">Hohmann Transfers</h1>
+                    
+                    <hr>
+                    
+                    <h3>Tangential Burns</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[ \Delta V = |V_{selected} - V_{present}|\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\Delta V = velocity \ change \ to \ go \ from \ one \ orbit \ to \ another \ (km/s)$</p>
+                    <p class="def">$V_{selected} = velocity \ in \ desired \ orbit \ at \ present \ orbit \ radius \ (km/s)$</p>
+                    <p class="def">$V_{present} = velocity \ in \ present \ orbit \ (km/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Major Axis of Transfer Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[2a_{transfer} = R_{orbit1} + R_{orbit2}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$2a_{transfer} = major \ axis \ of \ transfer \ orbit \ (km)$</p>
+                    <p class="def">$R_{orbit1} = radius \ of \ first \ orbit \ (km)$</p>
+                    <p class="def">$R_{orbit2} = radius \ of \ second \ orbit \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Specific Mechanical Energy of Transfer Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\varepsilon_{transfer} = - \frac{\mu}{2a_{transfer}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\varepsilon_{transfer} = specific \ mechanical \ energy \ of \ tranfer \ orbit \ (km^{2}/s^{2})$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{s}) \ for \ Earth$</p>
+                    <p class="def">$2a_{transfer} = major \ axis \ of \ transfer \ orbit$</p>
+                    
+                    <hr>
+                    
+                    <h3>Time of Flight (TOF) of Transfer Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[TOF = \frac{P}{2} = \pi \sqrt{\frac{a_{transfer}^{3}}{\mu}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$TOF = spacecraft's \ time \ of \ flight \ (s)$</p>
+                    <p class="def">$P = orbital \ period \ (s)$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    <p class="def">$a = semimajor \ axis \ of \ transfer \ orbit \ (km)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \ (km^{3}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Simple Plane Change</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\Delta V_{simple} = 2V_{initial} \sin \Big(\frac{\theta}{2}\Big)\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\Delta V_{simple} = change \ in \ velocity \ for a \ simple \ plane \ change \ (km/s)$</p>
+                    <p class="def">$V_{initial} = V_{final} = velocities \ in \ the \ initial \ and \ final \ orbits \ (km/s)$</p>
+                    <p class="def">$\theta = plane-change \ angle \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Combined Plane Change</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\Delta V_{combined} = \sqrt{(|\overline{V_{initial}}|)^{2} + (|\overline{V_{final}}|)^{2} - 2|\overline{V_{initial}}||\overline{V_{final}}| \cos \theta}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\Delta V_{combined} = change \ in \ velocity \ for \ combined \ plane \ change \ (km/s)$</p>
+                    <p class="def">$|\overline{V_{initial}}| = magnitude \ of \ velocity \ in \ initial \ orbit \ (km/s)$</p>
+                    <p class="def">$|\overline{V_{final}}| = magnitude \ of \ velocity \ in \ final \ orbit \ (km/s)$</p>
+                    <p class="def">$\theta = plane-change \ angle \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="ren">Rendezvous</h1>
+                    
+                    <hr>
+                    
+                    <h3>Angular Momentum</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\omega = \sqrt{\frac{\mu}{a^{3}}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\omega = spacecraft's \ angular \ momentum \ (rad/s)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ for \ Earth \ (km^{3}/s^{2})$</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Lead Angle</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\alpha_{lead} = \omega_{target}TOF\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\alpha_{lead} = angle \ by \ which \ the \ interceptor \ must \ lead \ the \ target \ (rad)$</p>
+                    <p class="def">$\omega_{target} = target \ spacecraft's \ angular \ velocity \ (rad/s)$</p>
+                    <p class="def">$TOF = time \ of \ flight \ (s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Phase Angle</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\phi_{final} = \pi - \alpha_{lead}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\phi_{final} = phase \ angle \ between \ interceptor \ and \ target \ as \ transfer \ begins \ (rad)$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    <p class="def">$\alpha_{lead} = angle \ by \ which \ the \ interceptor \ must \ lead \ the \ target \ (rad)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Wait Time</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[wait \ time = \frac{\phi_{final} - \phi_{initial}}{\omega_{target} - \omega_{interceptor}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$wait \ time = time \ until \ interceptor \ initiates \ rendezvous \ (s)$</p>
+                    <p class="def">$\phi_{final}, \ \phi_{initial} = final \ and \ initial \ phase \ angles \ (rad)$</p>
+                    <p class="def">$\omega_{target}, \ \omega_{interceptor} = angular \ velocities \ of \ target \ and \ interceptor \ (rad/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Semimajor Axis of Phasing Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[a_{phasing} =  \sqrt[3]{ \mu \Big(\frac{\phi_{travel}}{2 \pi \omega_{target}}\Big)^{2}} \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$a_{phasing} = semimajor \ axis \ of \ the \ phasing \ orbit \ (km)$</p>
+                    <p class="def">$\mu = gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{2}) \ for \ Earth$</p>
+                    <p class="def">$\phi_{travel} = angular \ distance \ traveled \ by \ target \ to \ reach \ rendezvous \ (rad)$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    <p class="def">$\omega_{target} = target's \ angular \ velocity \ (rad/s)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="ipt">Interplanetary Travel</h1>
+                    
+                    <hr>
+                    
+                    <h3>Radius of Sphere of Influence (SOI)</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[R_{SOI} = a_{planet} \Big( \frac{m_{planet}}{m_{Sun}} \Big)^{2/5}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$R_{SOI} = radius \ of \ planet's \ sphere \ of \ influence \ (km)$</p>
+                    <p class="def">$a_{planet} = semimajor \ axis \ of \ the \ planet's \ orbit \ around \ the \ Sun \ (km)$</p>
+                    <p class="def">$m_{planet} = mass \ of \ planet \ (kg)$</p>
+                    <p class="def">$m_{Sun} = mass \ of \ the \ Sun = 1.989 \times 10^{30} \ (kg)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Velocity around the Sun</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{Earth} = \sqrt{2 \Big( \frac{\mu_{Sun}}{R_{to Earth}} + \varepsilon_{Earth} \Big)} \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$V_{Earth} = Earth's \ orbital \ velocity \ with \ respect \ to \ the \ Sun \ (km/s)$</p>
+                    <p class="def">$\mu_{Sun} = gravitational \ parameter \ of \ the \ Sun \approx 1.327 \times 10^{11} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R_{to Earth} = distance \ from \ Sun \ to \ Earth \approx 1.496 \times 10^{8} \ (km)$</p>
+                    <p class="def">$\varepsilon_{Earth} = specific \ mechanical \ energy \ of \ Earth's \ orbit \ (km^{2}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Specific Mechanical Energy in Transfer Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\varepsilon_{transfer} = - \frac{\mu_{Sun}}{2a_{transfer}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\varepsilon_{transfer} = spacecraft's \ specific \ mechanical \ energy \ in \ heliocentric \ transfer \ orbit \ (km^{2}/s^{2})$</p>
+                    <p class="def">$\mu_{Sun} = gravitational \ parameter \ of \ the \ Sun \approx 1.327 \times 10^{11} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$a_{transfer} = semimajor \ axis \ of \ the \ transfer \ orbit \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Semimajor Axis of Transfer Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[a_{transfer} = \frac{R_{to Earth} + R_{to Target}}{2}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$a_{transfer} = semimajor \ axis \ of \ the \ transfer \ orbit \ (km)$</p>
+                    <p class="def">$R_{to Earth} = radius \ from \ the \ Sun \ to Earth \approx 1.496 \times 10^{8} \ (km)$</p>
+                    <p class="def">$R_{to Target} = radius \ from \ the \ Sun \ to \ the \ target \ planet \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Velocity Needed for Transfer</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{transfer at Earth} = \sqrt{2 \Big( \frac{\mu_{Sun}}{R_{toEarth}} + \varepsilon_{transfer}\Big)}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$V_{transfer at Earth} = velocity \ spacecraft \ needs \ at \ Earth's \ radius \ from \ Sun \ to \ transfer \ to \ target \ (km/s)$</p>
+                    <p class="def">$\mu_{Sun} = gravitational \ parameter \ of \ the \ Sun \approx 1.327 \times 10^{11} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R_{to Earth} = radius \ from \ the \ Sun \ to Earth \approx 1.496 \times 10^{8} \ (km)$</p>
+                    <p class="def">$\varepsilon_{transfer} = spacecraft's \ specific \ mechanical \ energy \ in \ heliocentric \ transfer \ orbit \ (km^{2}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Velocity at Infinity</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{ \infty Earth} = |V_{transfer at Earth} - V_{Earth}|\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$V_{ \infty Earth} = spacecraft's \ velocity \ at \ infinity \ with \ respect \ to \ Earth \ (km/s)$</p>
+                    <p class="def">$V_{transfer at Earth} = velocity \ spacecraft \ needs \ at \ Earth's \ radius \ from \ Sun \ to \ transfer \ to \ target \ (km/s)$</p>
+                    <p class="def">$V_{Earth} = Earth's \ orbital \ velocity \ with \ respect \ to \ the \ Sun \ (km/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Velocity on Transfer Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{transfer at target} = \sqrt{2 \Big( \frac{\mu_{Sun}}{R_{to target}} + \varepsilon_{transfer} \Big)}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where</p>
+                    <p class="def">$V_{transfer at target} = spacecraft's \ velocity \ on \ the \ transfer \ orbit \ just \ outside \ the \target's \ SOI \ (km/s)$</p>
+                    <p class="def">$\mu_{Sun} \approx 1.327 \times 10^{11} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R_{to target} = distance \ from \ the \ Sun \ to \ the \ target \ planet \ (km)$</p>
+                    <p class="def">$\varepsilon_{transfer} = specific \ mechanical \ energy \ of \ the \ transfer \ orbit \ (km^{2}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Specific Mechanical Energy of Target Planet</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\varepsilon_{target} = - \frac{\mu_{Sun}}{2a_{target}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\varepsilon_{target} = target \ planet's \ specific \ mechanical \ energy \ with \ respect \ to \ the \ Sun \ (km^{2}/s^{2})$</p>
+                    <p class="def">$\mu_{Sun} \approx 1.327 \times 10^{11} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$a_{target} = target \ planet's \ semimajor \ axis \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Target Planet's Velocity around The Sun</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{target} = \sqrt{2 \Big( \frac{\mu_{Sun}}{R_{to target}} + \varepsilon_{target} \Big)}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$V_{target} = target \ planet's \ velocity \ around \ the \ Sun \ (km/s)$</p>
+                    <p class="def">$\mu_{Sun} \approx 1.327 \times 10^{11} \ (km^{3}/s^{2})$</p>
+                    <p class="def">$R_{totarget} = distance \ from \ the \ Sun \ to \ the \ target \ planet \ (km)$</p>
+                    <p class="def">$\varepsilon_{target} = target \ planet's \ specific \ mechanical \ energy \ (km^{3}/s^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Velocity at Infinity</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{ \infty target} = |V_{transfer at target} - V_{target}|\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$V_{ \infty target} = spacecraft's \ velocity \ at \ infinity \ with \ respect \ to \ target \ (km/s)$</p>
+                    <p class="def">$V_{transfer at target} = velocity \ spacecraft \ has \ just \ outside \ target \ planet's \ SOI \ (km/s)$</p>
+                    <p class="def">$V_{target} = target's \ orbital \ velocity \ with \ respect \ to \ the \ Sun \ (km/s)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="po">Predicting Orbits</h1>
+                    
+                    <hr>
+                    
+                    <h3>Mean Motion</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[n = \frac{angle}{time} = \frac{2 \pi}{P} = \sqrt{\frac{\mu}{a^{3}}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$n = spacecraft's \ mean \ motion \ (rad/s)$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    <p class="def">$P = orbital \ period \ (s)$</p>
+                    <p class="def">$\mu = central \ body's \ gravitational \ parameter \approx 3.986 \times 10^{5} \ (km^{3}/s^{2}) \ for \ Earth$</p>
+                    <p class="def">$a = semimajor \ axis \ (km)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Time of Flight (TOF)</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[TOF = \frac{u_{future} - u_{initial}}{n}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$TOF = time \ of \ flight$</p>
+                    <p class="def">$u_{future} = spacecraft's \ future \ argument \ of \ latitude \ (rad)$</p>
+                    <p class="def">$u_{initial} \ spacecraft's \ initial \ argument \ of \ latitude \ (rad)$</p>
+                    <p class="def">$n = spacecraft's \ mean \ motion \ (rad/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Mean Anomaly</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[M = nT\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$M = mean \ anomaly \ (rad)$</p>
+                    <p class="def">$n = mean \ motion \ (rad/s)$</p>
+                    <p class="def">$T = time \ since \ last \ perigee \ passage \ (s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Change in Mean Motion Between Two Points in an Orbit</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[M_{future} - M_{initial} = n \left( t_{future} - t_{initial} \right) - 2k \pi \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$M_{future} = mean \ anomaly \ when \ spacecraft \ is \ in \ the \ future \ position \ (rad)$</p>
+                    <p class="def">$M_{initial} = mean \ anomaly \ of \ spacecraft's \ initial \ position \ (rad)$</p>
+                    <p class="def">$t_{future} - t_{initial} = TOF \ between \ two \ points \ in \ the \ orbit \ (s)$</p>
+                    <p class="def">$k = the \ number \ of \ times \ the \ spacecraft \ passes \ perigee \ during \ the \ TOF$</p>
+                    <p class="def">$\pi = 3.14159... \ (unitless)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Eccentric Anomaly</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[M = E - e \sin E\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$M = mean \ anomaly \ (rad)$</p>
+                    <p class="def">$E = eccentric \ anomaly \ (rad)$</p>
+                    <p class="def">$e = eccentricity \ (unitless)$</p>
+                    
+                    <br>
+                    <hr>
+                    
+                    <h4>Eccentric Anomaly Another Way:</h4>
+                    
+                    <p class="eq">
+                        \[\cos E = \frac{e + \cos \nu}{1 + e \cos \nu}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$E = eccentric \ anomaly \ (rad)$</p>
+                    <p class="def">$e = eccentricy \ (unitless)$</p>
+                    <p class="def">$\nu = true \ anomaly \ (rad)$</p>
+                    
+                    <br>
+                    <hr>
+                    
+                    <h4>Eccentric Anomaly One More Way:</h4>
+                    
+                    <p class="eq">
+                        \[\cos \nu = \frac{\cos E - e}{1 - e \cos E}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\nu = true \ anomaly \ (rad)$</p>
+                    <p class="def">$E = eccentric \ anomaly \ (rad)$</p>
+                    <p class="def">$e = eccentricy \ (unitless)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="launch">Launch</h1>
+                    
+                    <hr>
+                    
+                    <h3>Launch Site Latitude</h3>
+                    
+                    <hr>
+                    
+                    <div style="background-color: whitesmoke;">
+                        <p>The desired orbital inclination must be equal to, or greater than, the launch site's latitude, $L_{0}$.</p>
+                        <p>A launch window can only exist for the following conditions:</p>
+                        
+                        <br>
+                        
+                        <p class="eq">
+                            \[L_{0} \leq i \ (direct \ (prograde) \ orbits)\]
+                        </p>
+                        <p class="eq">
+                            \[L_{0} \leq 180^{\circ} - i \ (indirect \ (retrograde) \ orbits)\]
+                        </p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Launch-Direction Auxiliary Angle</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[ \sin \gamma = \frac{ \cos \alpha}{ \cos L_{0}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\gamma = launch-direction \ auxiliary \ angle \ (deg \ or \ rad)$</p>
+                    <p class="def">$\alpha = inclination \ auxiliary \ angle \ (deg \ or \ rad)$</p>
+                    <p class="def">$L_{0} = launch \ site \ latitude \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Launch-Window Location Angle</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[ \cos \delta = \frac{ \cos \gamma}{ \sin \alpha}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\delta = launch-window \ location \ angle \ (deg \ or \ rad)$</p>
+                    <p class="def">$\gamma = launch-direction \ auxiliary \ angle \ (deg \ or \ rad)$</p>
+                    <p class="def">$\alpha = inclination \ auxiliary \ angle \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Launch-Window Near Ascending Node</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[LWST_{AN} = \Omega + \delta \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$LWST_{AN} = launch-window \ sidereal \ time \ at \ ascending \ node$</p>
+                    <p class="def">$\Omega = right \ ascension \ of \ the \ ascending \ node \ (deg \ or \ rad)$</p>
+                    <p class="def">$\delta = launch-window \ location \ angle \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Launch-Window Near Descending Node</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[LWST_{DN} = \Omega + \left( 180^{\circ} - \delta \right) \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$LWST_{DN} = launch-window \ sidereal \ time \ at \ descending \ node$</p>
+                    <p class="def">$\Omega = right \ ascension \ of \ the \ ascending \ node \ (deg \ or \ rad)$</p>
+                    <p class="def">$\delta = launch-window \ location \ angle \ (deg \ or \ rad)$</p>
+                    
+                    <hr>
+                    
+                    <h1 class="section-header" id="re">Re-Entry</h1>
+                    
+                    <hr>
+                    
+                    <h3>Dynamic Pressure</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{q} = \frac{\rho V^{2}}{2}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{q} = dynamic \ pressure \ on \ the \ spacecraft \ (N/m^{2})$</p>
+                    <p class="def">$\rho = atmospheric \ density \ (kg/m^{3})$</p>
+                    <p class="def">$V = spacecraft's \ velocity \ (m/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Drag</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[F_{drag} = \bar{q} C_{D} A = \frac{1}{2} \rho V^{2} C_{D} A \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$F_{drag} = drag \ force \ on \ spacecraft \ (N)$</p>
+                    <p class="def">$\bar{q} = dynamic \ pressure \ on \ the \ spacecraft \ (N/m^{2})$</p>
+                    <p class="def">$C_{D} = drag \ coefficient \ (unitless)$</p>
+                    <p class="def">$A = spacecraft's \ cross-sectional \ area \ (m^{2})$</p>
+                    <p class="def">$\rho = atmospheric \ density \ (kg/m^{3})$</p>
+                    <p class="def">$V = spacecraft's \ velocity \ (m/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Acceleration</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\bar{a} = \Big( - \bar{q} \frac{C_{D}A}{m} \cos \gamma \Big) \hat{X} + \Big( \bar{q} \frac{C_{D}A}{m} \sin \gamma \Big) \hat{Z} \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\bar{a} = spacecraft's \ acceleration \ (m/s^{2})$</p>
+                    <p class="def">$\bar{q} = dynamic \ pressure \ on \ the \ spacecraft \ (N/m^{2})$</p>
+                    <p class="def">$C_{D} = drag \ coefficient \ (unitless)$</p>
+                    <p class="def">$A = spacecraft's \ cross-sectional \ area \ (m^{2})$</p>
+                    <p class="def">$m = spacecraft's \ mass \ (kg)$</p>
+                    <p class="def">$\gamma = spacecraft's \ flight-path \ angle \ (deg)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Ballistic Coefficient</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[BC = \frac{m}{C_{D}A}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$BC = spacecraft's \ ballistic \ coefficient \ (kg/m^{2})$</p>
+                    <p class="def">$m = spacecraft's \ mass \ (kg)$</p>
+                    <p class="def">$C_{D} = drag \ coefficient \ (unitless)$</p>
+                    <p class="def">$A = spacecraft's \ cross-sectional \ area \ (m^{2})$</p>
+                    
+                    <hr>
+                    
+                    <h3>Maximum Deceleration</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[a_{max} = \frac{V_{re-entry}^{2} \beta \sin \gamma}{2e}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$a_{max} = spacecraft's \ maximum \ deceleration \ (m/s^{2})$</p>
+                    <p class="def">$V_{re-entry} = spacecraft's \ re-entry \ velocity \ (m/s)$</p>
+                    <p class="def">$\beta = atmospheric \ scale \ height = 0.000139 \ (m^{-1}) \ for \ Earth$</p>
+                    <p class="def">$\gamma = flight \ path \ angle \ (deg)$</p>
+                    <p class="def">$e = base \ of \ the \ natural \ logarithm = 2.7182...$</p>
+                    
+                    <hr>
+                    
+                    <h3>Altitude of Maximum Acceleration</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[h_{max} = \frac{1}{\beta} \ln \Big( \frac{\rho_{0}}{BC \beta \sin \gamma} \Big) \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$h_{max} = altitude \ of \ spacecraft's \ maximum \ acceleration \ (m)$</p>
+                    <p class="def">$\beta = atmospheric \ scale \ height = 0.000139 \ (m^{-1}) \ for \ Earth$</p>
+                    <p class="def">$\rho_{0} = atmospheric \ density \ at \ sea \ level = 1.225 \ (kg/m^{3})$</p>
+                    <p class="def">$BC = spacecraft's \ ballistic \ coefficient \ (kg/m^{2})$</p>
+                    <p class="def">$\gamma = flight \ path \ angle \ (deg)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Heating Rate</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[\dot{q} \cong 1.83 \times 10^{-4} V^{3} \sqrt{ \frac{ \rho}{r_{nose}}}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$\dot{q} = spacecraft's \ heating \ rate \ (W/m^{2})$</p>
+                    <p class="def">$V = spacecraft's \ velocity \ (m/s)$</p>
+                    <p class="def">$\rho = air \ density \ (km/m^{3})$</p>
+                    <p class="def">$r_{nose} = spacecraft's \ nose \ radius \ (m)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Altitude of Maximum Heating Rate</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[h_{\dot{q}max} = \frac{1}{\beta} \ln \Big( \frac{\rho_{0}}{3BC \beta \sin \gamma} \Big) \]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$h_{\dot{q}max} = altitude \ of \ spacecraft's \ maximum \ heating \ rate \ (m)$</p>
+                    <p class="def">$\beta = atmospheric \ scale \ height = 0.000139 \ (m^{-1}) \ for \ Earth$</p>
+                    <p class="def">$\rho_{0} = atmospheric \ density \ at \ sea \ level = 1.225 \ (kg/m^{3})$</p>
+                    <p class="def">$BC = spacecraft's \ ballistic \ coefficient \ (kg/m^{2})$</p>
+                    <p class="def">$\gamma = flight \ path \ angle \ (deg)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Velocity at Maximum Heating Rate</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[V_{\dot{q} max} \approx 0.846 V_{re-entry}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$V_{\dot{q} max} = spacecraft's \ velocity \ when \ it \ reaches \ maximum \ heating \ rate \ (m/s)$</p>
+                    <p class="def">$V_{re-entry} = spacecraft's \ velocity \ at \ re-entry \ (m/s)$</p>
+                    
+                    <hr>
+                    
+                    <h3>Emitted Power</h3>
+                    
+                    <hr>
+                    
+                    <p class="eq">
+                        \[q_{A} = \sigma \varepsilon T^{4}\]
+                    </p>
+                    
+                    <br>
+                    
+                    <p class="def">Where:</p>
+                    <p class="def">$q_{A} = object's \ emitted \ power \ per \ unit \ area \ (W/m^{2})$</p>
+                    <p class="def">$\sigma = Boltzmann \ constant = 5.67 \times 10^{-8} \ (W/m^{2}K^{4})$</p>
+                    <p class="def">$\varepsilon = object's \ emissivity \ (0 &lt; \varepsilon &lt; 1) \ (unitless)$</p>
+                    <p class="def">$T = object's \ temperature \ (K)$</p>
+                </div>
+                <!-- End Formulas Column -->
+                
+                <!-- Sidebar Column -->
+                <div class="col-md-4">
+                    <div class="well">
+                        <h4>Topic Categories</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#basic-phys">Basic Physics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#two-body">Two-Body Motion</a>
+                                    </li>
+                                    <li>
+                                        <a href="#orb-geo">Orbital Geometry</a>
+                                    </li>
+                                    <li>
+                                        <a href="#orb-mo">Orbital Motion</a>
+                                    </li>
+                                    <li>
+                                        <a href="#orb-elem">Orbital Elements</a></li>
+                                    <li>
+                                        <a href="#ground">Ground Tracks</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#ht">Hohmann Transfers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#ren">Rendezvous</a>
+                                    </li>
+                                    <li>
+                                        <a href="#ipt">Interplanetary Travel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#po">Predicting Orbits</a>
+                                    </li>
+                                    <li>
+                                        <a href="#launch">Launch</a>
+                                    </li>
+                                    <li>
+                                        <a href="#re">Re-Entry</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Sidebar Column -->
+            
+            <hr class="divider">
+            
+            <!-- Footer -->
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p style="font-size: 10px; line-height: 1">Header image courtesy and copyright of 
+                <a href="http://www.freerangestock.com">Free Range Stock</a></p>
+                <p style="padding: 10px;"></p>
+                <p style="text-align: center;">&copy; 2016 &middot; Elaine Coe &middot; All rights reserved.</p>
+            </footer>
+            <!-- End Footer -->
+        </div>
+        
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://latex.codecogs.com/latexit.js"></script>
+        <script type="text/javascript">LatexIT.add('p',true);</script>
+        <script src="scripts/site.js"></script>
+        <!-- End Scripts -->
+    </body>
+</html>

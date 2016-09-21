@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A great place to learn small tidbits about space.">
+        <meta name="keywords" content="orbital mechanics, celestial mechanics, space, facts, tidbits">
+        <meta name="author" content="Elaine Coe">
+        
+        <title>Orbital Mechanics Calculator: Tidbits</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- End Favicon -->
+        
+        <!-- Stylesheets/Fonts -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+        integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/tidbits.css">
+        <!-- Custom/Google Fonts Go Here -->
+        <!-- End Stylesheets/Fonts -->
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <!-- Navbar -->
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
+                            aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Orbital Mechanics Calculator</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="calculator.html">Calculator</a></li>
+                                <li><a href="formulas.html">Formulas</a></li>
+                                <li><a href="terms.html">Terms</a></li>
+                                <li class="active"><a href="tidbits.html">Tidbits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar -->
+        
+        <!-- Header/Jumbotron -->
+        <header class="jumbotron" style="background-image: url('images/slide4.jpg');">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-xs-12 col-sm-8">
+                        <p style="padding: 20px;"></p>
+                        <h1>Tidbits.</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header/Jumbotron -->
+        
+        <!-- Social / Share Icons Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://elainecoe.github.io/orbital-mechanics-calculator/tidbits.html"
+                            target="_blank" title="Share on Facebook!" class="fb"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?source=http://elainecoe.github.io/orbital-mechanics-calculator/tidbits.html&text=Check%20this%20out!%20http://elainecoe.github.io/orbital-mechanics-calculator/tidbits.html&via=mrscoe719" 
+                            target="_blank" Title="Tweet this page!" class="tw">
+                            <i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=http://elainecoe.github.io/orbital-mechanics-calculator/tidbits.html"
+                            target="_blank" title="Share on Google+!" class="gp"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://elainecoe.github.io/orbital-mechanics-calculator/tidbits.html&title=Orbital%20Mechanics%20Calculator&summary=Neat%20site!&url=http://elainecoe.github.io/orbital-mechanics-calculator/tidbits.html"
+                            target="_blank" title="Share on LinkedIn!" class="lin"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="divider-social">
+            
+        </div>
+        <!-- End Social / Share Icons Container -->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 style="margin-bottom: 20px;">Welcome!</h2>
+                    <p style="border-bottom: 1px solid #eee; padding-bottom: 50px;">This is a collection of miscellaneous information (largely comprised of my test and homework responses) about space, space exploration and, of course, orbital mechanics.</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="misc" style="margin-top: 50px">
+                        <p class="bit">Space provides us with several unique advantages that make its exploration imperative for modern society.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> First, space allows for the “ultimate high ground,” so to speak.  This is advantageous to military operations (e.g., mapping, tracking troop movement, and surveillance) 
+                        and earth observations (e.g., weather and crop monitoring).
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Next, space provides us with a clear view of the universe.  For example, Space-based telescopes “see” better because their view is not impeded by Earth’s atmosphere. 
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Space also provides us with a “zero gravity,” or more correctly, a free-fall environment.  This type of environment has proven useful for manufacturing certain materials (i.e., metals, alloys, glasses, ceramics, polymers, semiconductors, and composites) because molecules line up differently when not subjected to gravity.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Another advantage offered by space is an abundance of materials.  The Moon is known to host large amounts of He-3 (Helium-3) that could be useful for nuclear power plants (it is a non-radioactive isotope with non-radioactive by-products), and asteroids are teeming with precious metals and gems.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Finally, space is truly the final frontier.  By their very nature, humans seem destined to be explorers...and space beckons <strong>loudly</strong>!
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">The elements of a space mission include:
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> the spacecraft
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> the orbits and trajectories
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> the launch vehicles
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> mission operation systems
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> mission management
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">An orbit is the path in which a spacecraft travels around a planet or other celestial body.  Increasing the size of an orbit—in effect, making it 
+                        “higher”—requires more energy; however, a higher orbit increases the swath width available to a payload, making the energy expenditure worthwhile.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">A launch vehicle often expends all of its fuel and thus, its energy, when getting a spacecraft into space.  In other words, the launch vehicle 
+                        cannot always put a spacecraft into the desired orbit—it needs a little help.  After the launch vehicle has completed its job, it leaves the spacecraft in a 
+                        temporary orbit where it stays until an upper stage transfers it to its mission orbit.  This temporary orbit is called a parking orbit.  Similarly, the transfer 
+                        orbit is the intermediate orbit between the parking orbit and the final, mission orbit.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Nicolaus Copernicus was the first to suggest that Earth was part of a heliocentric system.  However, people were very reluctant to accept his assertion.  
+                        The first obstacle in gaining acceptance of his model for the universe was simply the fact that Copernicus could not prove that the Earth moved, nor could he effectively 
+                        explain why Earth rotated on its own axis and revolved around the Sun.  Additionally, Copernicus’s model could not account for lack of parallax.  He argued that parallax 
+                        did not occur because the stars were so far away from Earth, but the vast distances this required were too difficult for most of his critics to fathom.  As a result, his 
+                        model was largely rejected.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Tycho Brahe and  Johannes Kepler could easily be described as a perfect team.  Brahe was an excellent observational astronomer—he even went as far as 
+                        developing a system to measure changes in his observations—but he was <i>not</i> a skilled mathematician.  Luckily, Kepler <i>was</i> a skilled mathematician.  Using Brahe’s careful 
+                        observations, Kepler was able to create a model of Mars’ orbit, and for the first time, astronomers realized that the planets did not follow perfectly circular orbits.  
+                        Their teamwork culminated into a scientific breakthrough of epic proportions—they <i>were</i> a perfect team!
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">It’s no secret that Aristotle was a great thinker, but his thoughts on the universe were <strong>way</strong> off base.  
+                        Four of Aristotle’s assertions that were thwarted by Galileo Galilei include:
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> The Moon and Sun are perfect and wholly different from Earth.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Everything revolves around the Earth.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Objects fall at different rates, based on their weight.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Objects in motion only keep going if something is physically pushing them.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Great strides were made in our understanding of the universe in the early 20th century.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Harlow Shapley was able to prove that our solar system was not at the center of our galaxy by using a velocity-distance relationship (later 
+                        known as Hubble’s Law).  Doppler (or red) shift, also enabled Shapley and Edwin Hubble to demonstrate that our universe is expanding, a phenomenon likely resulting 
+                        from a “Big Bang” at the beginning of time.  
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Albert Einstein also contributed to our changing view of the universe by developing the theory of relativity and discovering the relationship 
+                        between mass and energy (i.e., E=mc2), which when combined with Henri Becquerel’s discovery of radioactivity, helped describe the inner workings of our Sun.
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Space provides very lucrative opportunities for commercial companies.  One of the primary “money makers” is communications.  In today’s global 
+                        society, it is imperative for people to have access to communications.  Companies who can provide services such as satellite-based cellular telephone communication, 
+                        internet services, and television services rule the market (I love my DirecTV!).  
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Demand for GPS services also provide companies a way to make a quick buck.  Customers interested in GPS services include farmers, those in the 
+                        shipping and hauling industries, and recreational travelers.  
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> Moreover, in the near future, commercial companies could reap the benefits of up-and-coming technologies such as asteroid and Moon mining, space 
+                        travel, and microgravity manufacturing.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Space begins at the altitude where an object can briefly maintain an orbit.  From the perspective of Earthlings, this occurs at an altitude of approximately 
+                        130 km, or 80 miles.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">A spacecraft must endure and evade a number of hazards in space: gravity, atmosphere, vacuum (e.g., outgassing, cold welding, and heat transfer problems), 
+                        micrometeoroids and space junk, radiation, and charged particles.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Luckily, for us, the Earth possesses an inherent mechanism that protects it from the effects of solar and cosmic charged particles.  Earth’s molten iron core 
+                        creates a magnetic field.  The magnetic field lines, which are produced by this mechanism, wrap around the Earth, creating the magnetosphere.  When charged particles encounter 
+                        the magnetosphere, most of them are deflected away.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">The curvature of Earth causes the surface to drop about 5 meters vertically for every 8 kilometers horizontally.  Thus, if an object attains a horizontal velocity 
+                        that matches the horizontal velocity of Earth, the object’s path will follow Earth’s curvature at a constant height—it <strong>will</strong> orbit the Earth.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Specific mechanical energy is related to an orbit’s size by the semimajor axis, as seen here: $a = - \frac{\mu}{2 \varepsilon}$.  Essentially, this indicates that a larger (higher) mechanical 
+                        energy yields a larger-sized orbit.  Specific mechanical energy depends on the magnitude of $\bar{R}$ and $\bar{V}$ and the gravitational parameter, so the larger these values are, the larger the mechanical 
+                        energy will be, and the larger the displacement (position of the spacecraft) will be over time—resulting in a larger orbit.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">The six Classical Orbital Elements are:
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> latitude
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> longitude
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> altitude
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> horizontal velocity
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> heading
+                        <br>
+                        <br>
+                        <strong>&middot; </strong> vertical velocity
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Certain assumptions allow us to use a Hohmann Transfer for getting spacecraft into the correct orbit. We can use the Hohmann Transfer if we assume that the orbits are coplanar; their line of 
+                        apsides are aligned, or if they are co-apsidal orbits; and the instantaneous velocity changes are tangent to both the initial and final orbits.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Sometimes when moving a spacecraft from a smaller orbit (orbit 1) to a larger orbit (orbit 2), it is necessary to use a transfer orbit in between.  To accomplish this, we change the spacecraft’s 
+                        specific mechanical energy (which increases the semimajor axis of the orbit) via changes in orbital velocities.  From obit 1, we increase the spacecraft’s velocity by $\Delta V_{1}$ to gain enough energy to reach the 
+                        transfer orbit.  From orbit 2 (the larger orbit) we change the velocity again by $\Delta V_{2}$ to move the spacecraft out of the transfer orbit.  Now, we have made two increases in velocity which, in turn, have changed 
+                        the spacecraft’s specific mechanical energy, increasing orbit size (we’ve traded kinetic energy for potential energy).  Therefore, instead of the velocity increases resulting in a faster moving spacecraft, the 
+                        $\Delta V$'s culminate into a larger semimajor axis, or a larger orbit, with a greater total energy.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">To change only the inclination of an orbit, we must change the velocity at either the ascending node or the descending node.  At either of these nodes, a $\Delta V$ will cause the orbit to pivot about a line 
+                        connecting the two nodes, resulting in a change of inclination.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">To track and predict an orbit, we can use tracking data (range, azimuth, and elevation angles) to form a position vector, $\bar{R}_{initial}$, and a velocity vector, $\bar{V}_{initial}$.  Then we can use these vectors to 
+                        find the spacecraft’s current COEs.  The COEs can then be adjusted to a future point in time and they will then yield a new position vector, $\bar{R}_{future}$, and a new velocity vector, $\bar{V}_{future}$.  Finally, these new vectors 
+                        can be used to predict the spacecraft’s range, azimuth, and elevation angles.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Spacecraft in low-Earth orbit (particularly in orbits under an altitude of 600 km), are subject to the force of atmospheric drag.  Because drag is a non-conservative force, it causes the orbit to lose energy in the form 
+                        of friction.  Since orbital energy is a function of the semimajor axis, the semimajor axis of the orbit will decrease over time due to losses from the drag force.  Additionally, this causes the orbit to become more circular, so there 
+                        is also a decrease in the eccentricity of the orbit.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Besides atmospheric drag and the oblateness of Earth, a spacecraft’s orbit can be perturbed by solar radiation pressure, third-body gravitational effects, and unexpected thrusting (such as that which occurs due to outgassing 
+                        or malfunctioning thrusters).
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">Solar time is measured with respect to the Sun, and since our orbital elements are defined with respect to the geocentric-equatorial frame, using solar time to compute launch windows does not make much sense.  Therefore, we 
+                        choose sidereal time, which is measured as an angle between a longitude line and the vernal equinox, for our Earth-centered system.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">The orbital plane is comprised of two vectors, $\bar{R}$ and $\bar{V}$.  The cross-product of these vectors results in a third vector, $\bar{h}$, that is perpendicular to the other two vectors.  This system stays in tact 
+                        throughout the course of a spacecraft’s orbit—it does not change unless an external force acts on the spacecraft (i.e., it does not change with the rotation of the Earth).  Therefore, we say that the orbital plane remains fixed in space.
+                        </p>
+                        
+                        <hr class="bit-divider">
+                        
+                        <p class="bit">The reentry corridor is a three-dimensional path a spacecraft must use to avoid skipping out of the atmosphere or to avoid burning up in the atmosphere when reentering from space.  The size of the corridor is dependent on 
+                        the three competing constraints (deceleration, heating, and accuracy).  If the spacecraft enters the atmosphere below the reentry corridor, or “undershoots” the corridor, it will experience too much drag resulting in overheating and 
+                        slowing down.  If the spacecraft enters the atmosphere above the reentry corridor, or “overshoots” the corridor, it will experience too little drag, which will cause the spacecraft to skip off the atmosphere (like a stone skipping 
+                        across water), and the spacecraft will end up back out in space instead of back on Earth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="divider">
+            
+            <!-- Footer -->
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p style="font-size: 10px; line-height: 1">Header image courtesy of <a href="http://www.nasa.gov">NASA</a></p>
+                <p style="padding: 10px;"></p>
+                <p style="text-align: center;">&copy; 2016 &middot; Elaine Coe &middot; All rights reserved.</p>
+            </footer>
+            <!-- End Footer -->
+        </div>
+        
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://latex.codecogs.com/latexit.js"></script>
+        <script type="text/javascript">LatexIT.add('p',true);</script>
+        <script src="scripts/site.js"></script>
+        <!-- End Scripts -->
+    </body>
+</html>

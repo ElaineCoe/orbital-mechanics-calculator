@@ -1,0 +1,202 @@
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar-container {
+    width: auto;
+}
+
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+.carousel-caption {
+    padding-bottom: 100px;
+    z-index: 10;
+}
+
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.messages .col-sm-3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#circle1 {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#circle2 {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#circle3 {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#circle4 {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.messages h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.messages .col-md-3 p {
+    height: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.click {
+    text-align: center;
+}
+
+
+.social {
+    width: 300px;
+    height: 50px;
+    list-style: none;
+    padding: 15px 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.social li {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.social li a {
+    display: block;
+    background: #777;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    width: 30px;  
+    font-size: 18px;
+}
+
+.social .fb:hover {
+    background: #3b5998;
+}
+
+.social .tw:hover {
+    background: #00aced;
+}
+
+.social .gp:hover {
+    background: #dd4b39;
+}
+
+.social .lin:hover {
+    background: #007bb5;
+}
+
+.divider-social {
+    margin: 50px 0;
+}
+
+.divider {
+    margin: 80px 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 4px;
+    }
+    
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+}
